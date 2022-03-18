@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { CustomedCard } from '../../customComponents';
+import { CustomedCard, CustomedTypography } from '../../customComponents';
 
 export const Step3 = () => (
     <CustomedCard sx={{ maxWidth: 300 }}>
@@ -14,9 +14,9 @@ export const Step3 = () => (
           justifyContent="center"
           alignItems="center"
         >
-          <Typography style={{color: '#22bb33'}} variant="subtitle1" component="div" sx={{color: 'success'}}>
+          <CustomedTypography variant="subtitle1" component="div" sx={{color: 'success'}}>
             YOUR INVITATION WAS SENT SUPER SUCCESSFULLY.
-          </Typography>
+          </CustomedTypography>
           <Typography variant="body2">
             You can send another.
           </Typography>

@@ -20,7 +20,6 @@ export const StyledInput = ({ text, input , copy = false, isDisabled = false, se
   };
   const sendInfo = () => {
     localStorage.setItem( input, inputText);
-    console.log(input, inputText);
     dispatch(userActions.getUserInfoAsync({ input: input, inputText: inputText}))
   };
 

@@ -1,5 +1,5 @@
 import React , { useState, useEffect } from 'react';
-import { StartButton, Step1, Step2_1, Step2a, Step3 } from './components';
+import { StartButton, Step1, Step2_1, Step3 } from './components';
 import { useSelector } from 'react-redux';
 import { selectUserInput } from './lib/redux/selectors';
 
@@ -32,11 +32,11 @@ function App() {
           case 1:
             return <Step1 setCard={setCard} />
           case 2:
-            return <Step2_1 setCard={setCard} inputType={card === 2}/>
+            return <Step2_1 setCard={setCard} inputType={card === 2} card/>
           case 3:
-            return <Step2_1 setCard={setCard} inputType={card === 2}/>
+            return <Step2_1 setCard={setCard} inputType={card === 2} card/>
           case 4:
-            return <Step2a setCard={setCard} />
+            return <Step2_1 setCard={setCard} card={card}/>
           case 5 :
             return <Step3 />
           default:
